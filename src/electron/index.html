@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <base href="/app/">
+
+  </head>
+  <body ng-cloak>
+  <header>
+    <div ui-view="header"></div>
+  </header>
+
+  <section layout="row" layout-fill>
+    <div ui-view="sidenav">
+    </div>
+
+    <div ui-view="container" flex layout-padding>
+    </div>
+
+  </section>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>

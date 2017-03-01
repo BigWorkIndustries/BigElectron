@@ -1,0 +1,33 @@
+<div id="appHeader" ng-cloak>
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            &nbsp;&nbsp;
+            <div layout="row" layout-margin>
+
+                <a ui-sref="app.dashboard">
+                    <!--<img src="assets/images/logo.png" style="height:64px;"/>-->
+                    <h1>BigElectron</h1>
+
+                </a>
+
+
+
+                <md-progress-circular ng-hide="!showActivity" ng-disabled="!showActivity"
+                                      class="md-warn" md-diameter="40"></md-progress-circular>
+            </div>
+
+            <span flex></span>
+            <div layout="row" layout-margin>
+                <md-button ui-sref=".link1" class="md-raised white">LINK1</md-button>
+                <md-button ui-sref=".link2" class="md-raised white">LINK2</md-button>
+                <md-button ui-sref=".link3" class="md-raised white">LINK3</md-button>
+                <md-button ng-click="logout()">LOGOUT</md-button>
+            </div>
+
+            &nbsp;&nbsp;
+        </div>
+
+    </md-toolbar>
+
+</div>
